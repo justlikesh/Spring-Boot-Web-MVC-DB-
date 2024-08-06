@@ -24,6 +24,7 @@ public class MemoryMemberRepository implements MemberRepository {
 
     @Override
     public List<Member> findAll() {
+        System.out.println(store);
         return new ArrayList<>(store.values());
     }
 
